@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "keywords": ["HTML", "blockly"],
+  "main": "index.html",
   "author": "Boris Fritscher",
   "license": "ISC"
 }
