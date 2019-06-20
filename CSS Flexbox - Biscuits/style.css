@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Inconsolata|Charmonman');
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+nav a {
+  padding: 8px 1em;
+  display: block;
+  font-size: 2em;
+}
+
+.two_columns {
+  margin: 2em;
+}
+
+/* le premier p du deuxième article ne doit pas avoir le texte justifié */
+main article:nth-child(2) p:first-of-type {
+  text-align: left;
+}
+
+article, section { 
+  background: rgba(255, 255, 255, 0.8);
+  padding: 16pt;
+  margin-bottom: 2em;
+}
+
+.box-citation {
+  border-radius: 8pt;
+  padding: 8pt;  
+  margin: 2em 0;
+}
+
+blockquote {
+  margin: 8pt;
+  font-size: 18pt;
+}
+
+blockquote::before {
+  content: '\201C';
+}
+
+blockquote::after {
+  content: '\201D';
+}
+
+/* mise en forme de aparté */
+{
+  padding: 8px;
+  margin-left: 2em;
+}

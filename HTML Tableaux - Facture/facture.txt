@@ -1,0 +1,8 @@
+No article	Article	Qté	Prix	Montant
+9598353	Intel Core i9-9900K	1	629	629
+9853832	ASUS ROG Strix Z390-F Gaming	1	249	249
+6134907	G.Skill Trident Z RGB (2x, 8G)	2	195	390
+3451233	be quiet! Pure Rock	1	43.90	43.90
+Sous total	1311.90
+TVA	8%	104.95
+Total	1416.85

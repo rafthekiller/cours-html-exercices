@@ -1,0 +1,53 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #444;
+  width: 580px;
+  margin: 0 auto;
+}
+
+header {
+  height: 170px;
+  padding: 30px 0 0 20px;
+}
+
+main {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+#info label {
+  display: flex;
+}
+
+#info label > span {
+  width: 200px;
+}
+
+#carte h3 {
+  margin: 0;
+}
+#carte p {
+  padding: 0 8px;
+}
+
+#carte p label > span {
+  width: 192px;
+}
+
+label > input,
+label > select {
+  flex: 1;
+}
+
+#envoyer {
+  display: block;
+  width: 300px;
+  margin: 10px auto 0 auto;
+  font-size: 14pt;
+  padding: 5px;
+}
