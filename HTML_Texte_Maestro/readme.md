@@ -1,5 +1,7 @@
 # Exercice: Maestro (HTML Texte)
 
+[![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Texte_Maestro)
+
 Ouvrir le projet dans [codesanbox.io](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Texte_Maestro)
 
 Utiliser le contenu du fichier [Conditions et règlements.txt](Conditions%20et%20règlements.txt) pour compléter la page [index.html](index.html) avec des balises de titres, paragraphes et listes.

@@ -1,5 +1,8 @@
 # Exercice: Facture (HTML Tableaux)
 
+[![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Tableaux_Facture)
+
+
 Ouvrir le projet dans [codesanbox.io](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Tableaux_Facture)
 
 Utiliser le contenu du fichier [facture.txt](facture.txt) pour compléter la page [index.html](index.html) avec des balises de tableaux.
