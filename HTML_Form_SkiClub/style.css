@@ -13,11 +13,24 @@ body {
 header {
   height: 170px;
   padding: 30px 0 0 20px;
+  /* compléter ici */
+  
 }
 
 main {
   background-color: #eeeeee;
   padding: 20px;
+}
+
+h1 {
+  /* compléter ici */
+
+}
+
+
+fieldset legend {
+  color: #2F4B6F;
+  font-weight: bold;
 }
 
 #info label {
@@ -28,8 +41,15 @@ main {
   width: 200px;
 }
 
+#carte {
+  /* compléter ici */
+
+}
+
 #carte h3 {
   margin: 0;
+  /* compléter ici */
+
 }
 #carte p {
   padding: 0 8px;
@@ -44,10 +64,18 @@ label > select {
   flex: 1;
 }
 
+textarea {
+  width: 100%;
+  /* compléter ici */
+
+}
+
 #envoyer {
   display: block;
   width: 300px;
   margin: 10px auto 0 auto;
   font-size: 14pt;
   padding: 5px;
+  /* compléter ici */
+
 }
