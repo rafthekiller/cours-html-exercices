@@ -1,7 +1,6 @@
 # Exercice: BlackWhite (HTML Liens)
 
-<a style="border-radius: 0.25em;background-image: linear-gradient(to bottom, #3498db, #2980b9);color: white;padding: 0.5em 0.75em;text-decoration: none;box-shadow: 0 0.15em 1em rgba(0, 0, 0, 0.2);" href="https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Liens_Blackwhite">Commencer dans CodeSanbox</a>
-
+[![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Liens_Blackwhite)
 
 Ouvrir le projet dans [codesanbox.io](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/HTML_Liens_Blackwhite)
 
