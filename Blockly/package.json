@@ -1,11 +1,9 @@
 {
-  "name": "code_with_blockly",
+  "name": "blockly-code",
   "version": "1.0.0",
   "description": "",
-  "keywords": ["HTML", "blockly"],
+  "keywords": [],
   "main": "index.html",
-  "author": "Boris Fritscher",
-  "license": "ISC",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
