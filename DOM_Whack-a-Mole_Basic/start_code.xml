@@ -1,0 +1,194 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="Vzn(3Z/02x5H2D.x1/DR">moles</variable>
+    <variable type="" id="v@,F[r0:`s8EZ`q=b;E(">holes</variable>
+    <variable type="" id="5dK78ZH*D/TUQjJ0TE2C">isRunning</variable>
+    <variable type="" id="@!W.wa9S^R$j6[1zJ3{=">startButton</variable>
+    <variable type="" id="0Kfoq`9UIU5_eP0~NWZ6">peekingHole</variable>
+    <variable type="" id="md{6wSRW:EXzwsDkMs#T">mole</variable>
+    <variable type="" id="?:FbnuKMpW}W20gtTtMs">element</variable>
+  </variables>
+  <block type="variables_set" id="*iHo7?Z63w[=E7$NyUc7" x="-376" y="-235">
+    <field name="VAR" id="Vzn(3Z/02x5H2D.x1/DR" variabletype="">moles</field>
+    <next>
+      <block type="variables_set" id=":Ue+o+KDJ.c~upqudU{V">
+        <field name="VAR" id="v@,F[r0:`s8EZ`q=b;E(" variabletype="">holes</field>
+        <next>
+          <block type="variables_set" id="ry5[Ywa8mbPw5G.O`(1U">
+            <field name="VAR" id="@!W.wa9S^R$j6[1zJ3{=" variabletype="">startButton</field>
+            <next>
+              <block type="controls_forEach" id="wEL#7TmbG79VUAcSh2@p">
+                <field name="VAR" id="md{6wSRW:EXzwsDkMs#T" variabletype="">mole</field>
+                <value name="LIST">
+                  <block type="variables_get" id="Qthpsg9kX.nL%*nT(:oK">
+                    <field name="VAR" id="Vzn(3Z/02x5H2D.x1/DR" variabletype="">moles</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="handle_event" id="}I-L+Hs~|%shltZMXAQh">
+                    <field name="TYPE">click</field>
+                    <field name="element" id="?:FbnuKMpW}W20gtTtMs" variabletype="">element</field>
+                    <value name="TARGET">
+                      <block type="variables_get" id="UX0p+?2F^8H|V@6Oi8TR">
+                        <field name="VAR" id="@!W.wa9S^R$j6[1zJ3{=" variabletype="">startButton</field>
+                      </block>
+                    </value>
+                    <statement name="STACK">
+                      <block type="procedures_callnoreturn" id="5xDeEk:cMBJS5ghx#DvI">
+                        <mutation name="startGame"></mutation>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_defnoreturn" id="w-AO7ji5i5LcWThc*={X" x="217" y="-232">
+    <field name="NAME">startGame</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="w@AH{kYk9}AFq@Ht+#}*">
+        <field name="VAR" id="5dK78ZH*D/TUQjJ0TE2C" variabletype="">isRunning</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="xVcYs0OYt.b+^~sg+gl`">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="@cJ[=r^Ncq,=f!#9==Z0">
+            <mutation name="peekRandomMole"></mutation>
+            <next>
+              <block type="set_timeout" id="xCpA%D??bIg=@R:)w-=m">
+                <value name="TIME">
+                  <shadow type="math_number" id="efkz(s/B/9..Tf/ZNP0K">
+                    <field name="NUM">10000</field>
+                  </shadow>
+                </value>
+                <statement name="CALLBACK">
+                  <block type="procedures_callnoreturn" id="rRCNE?KfnC}S5I-$](G(">
+                    <mutation name="stopGame"></mutation>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="Q;bL6M$cX3^Y%}L,t=G[" x="-376" y="45">
+    <field name="NAME">peekRandomMole</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="controls_if" id="0*_3`L.rfV|*spl0AlNi">
+        <value name="IF0">
+          <block type="variables_get" id="N3y%tx$YTsR0NU~]:).$">
+            <field name="VAR" id="5dK78ZH*D/TUQjJ0TE2C" variabletype="">isRunning</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id=")1lV4phaUwW%Sqov{@z}">
+            <field name="VAR" id="0Kfoq`9UIU5_eP0~NWZ6" variabletype="">peekingHole</field>
+            <next>
+              <block type="dom_toggle_class" id="FrKu#xq69Z~xGSP=3XV*">
+                <value name="CLASS">
+                  <shadow type="text" id=",aPMjE;g8{[$Qu7wJ}B=">
+                    <field name="TEXT">up</field>
+                  </shadow>
+                </value>
+                <value name="ELEMENT">
+                  <block type="variables_get" id="19Ux^@h`O;O@Zp#3#hW`">
+                    <field name="VAR" id="0Kfoq`9UIU5_eP0~NWZ6" variabletype="">peekingHole</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="set_timeout" id="k$:I/bd;YnE=5,~Zkp(Y">
+                    <value name="TIME">
+                      <shadow type="math_number" id="`Bv3%A)LBOhkcUkAic2$">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                      <block type="math_random_int" id="YFi-Q7}ugjTR4VLZ7GfZ">
+                        <value name="FROM">
+                          <shadow type="math_number" id="pCBQAFeTEYxA^LQZ`ceE">
+                            <field name="NUM">500</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow type="math_number" id="F)BXl2HAJeW:4%FSg0sn">
+                            <field name="NUM">1500</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="CALLBACK">
+                      <block type="dom_toggle_class" id="$gb*bd.9v|6)x`YNk_pa">
+                        <value name="CLASS">
+                          <shadow type="text" id="FP4]czO~5b-wG{??+`y6">
+                            <field name="TEXT">up</field>
+                          </shadow>
+                        </value>
+                        <value name="ELEMENT">
+                          <block type="variables_get" id="!`|D/8@C{Nea#Lv%EW[+">
+                            <field name="VAR" id="0Kfoq`9UIU5_eP0~NWZ6" variabletype="">peekingHole</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="set_timeout" id="g3TCY}MdwhB~t0?hX|Q]">
+                            <value name="TIME">
+                              <shadow type="math_number" id=",mGb1k!.x.~jRnS4Y7H.">
+                                <field name="NUM">1000</field>
+                              </shadow>
+                              <block type="math_random_int" id="kiL3T.Ien[`PFgwiUF@R">
+                                <value name="FROM">
+                                  <shadow type="math_number" id="eC7Ek|if5fMEtt7rYjRt">
+                                    <field name="NUM">300</field>
+                                  </shadow>
+                                </value>
+                                <value name="TO">
+                                  <shadow type="math_number" id="2b$|G2``cE~Ow{//}Ms%">
+                                    <field name="NUM">1000</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="CALLBACK">
+                              <block type="procedures_callnoreturn" id="%1k`hO5Fv9q$mN8#A*!J">
+                                <mutation name="peekRandomMole"></mutation>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="IN{DHQ@d.R5u/ZB]`9QB" x="219" y="15">
+    <field name="NAME">stopGame</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="uRGe#o(H0uFGaF#0k}Dw">
+        <field name="VAR" id="5dK78ZH*D/TUQjJ0TE2C" variabletype="">isRunning</field>
+        <value name="VALUE">
+          <block type="logic_boolean" id="cdmTapj1g6O@-yLgdp5)">
+            <field name="BOOL">FALSE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="f^Or+VA6sq%I5YiHg8v9" x="222" y="140">
+    <field name="NAME">showScore</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+  </block>
+</xml>
