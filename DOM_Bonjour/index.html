@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blockly</title>
+  </head>
+  <body>
+    <h1>Blockly DOM: Bonjour</h1>
+    <p>
+      Cliquer sur ce bouton:
+    </p>
+    <p>
+      <button type="button" id="start">Entrez votre nom</button>
+    </p>
+    <p>
+      Affiche une boîte de dialogue qui permet d’entrer un nom.
+    </p>
+    <p>La réponse doit ensuite être:</p>
+    <ul>
+      <li>"Bonjour, " suivie du nom entré.</li>
+      <li>
+        Si la boîte de dialogue est annulée la réponse doit être "Dommage, au revoir."
+      </li>
+    </ul>
+    <script src="//bfritscher.github.io/blockly-dom/connect.js"></script>
+    <!-- à laisser pour l'auto-refresh -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
