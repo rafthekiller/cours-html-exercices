@@ -1,4 +1,4 @@
-# Blockly DOM Whack-a-Mole Basic
+# Blockly DOM: Whack-a-Mole Basic
 
 [![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/bfritscher/cours-html-exercices/tree/master/DOM_Whack-a-Mole_Basic)
 

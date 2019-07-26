@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Social Tab</title>
+  </head>
+  <body>
+    <header>
+      <h1>Social Tab</h1>
+      <div class="profile-photo"></div>
+      <h3>Geneviève Sanschagrin</h3>
+      <p>
+        <button data-tab="profile">Profile</button>
+        <button data-tab="favoris">Favoris</button>
+        <button data-tab="contact">Contact</button>
+      </p>
+    </header>
+    <main>
+      <section class="zone active" id="profile">
+        <h2>Profile</h2>
+        <p>Âge: 23 ans</p>
+        <p>Taille: 164 centimètres</p>
+        <p>Activité: étudiante</p>
+      </section>
+      <section class="zone" id="favoris">
+        <h2>Favoris</h2>
+        <p>Couleur: bleu</p>
+        <p>Musique: jazz</p>
+        <p>Sports: boxe</p>
+      </section>
+      <section class="zone" id="contact">
+        <h2>Contact</h2>
+        <form>
+          <p><label>Votre email: <input type="email"></label></p>
+          <p><label>Commentaire: <textarea></textarea></label></p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      Copyright © 2019 Social Tab All rights reserved.
+    </footer>
+    <!-- à laisser pour l'auto-refresh -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
